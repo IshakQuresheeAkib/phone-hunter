@@ -50,9 +50,9 @@ const handleShowDetails =async (id) => {
     showPhoneDetails(phone); 
     const showDetails_modal_5 = document.getElementById('showDetails_modal_5');
     showDetails_modal_5.innerHTML = `
-    <form method="dialog" class="modal-box md:card max-h-screen bg-gray-100 shadow-md mx-auto px-4">
-        <figure class="mt-4 bg-white mx-6 rounded-xl py-4 h-56">
-                <img src=${phone.image} alt="${phone["phone_name"]}" class="w-32 mx-auto" />
+    <form method="dialog" class="modal-box md:card max-h-screen bg-gray-100 shadow-md px-4">
+        <figure class="md:mt-4 bg-white mx-6 md:rounded-xl py-4">
+                <img src=${phone.image} alt="${phone["phone_name"]}" class="md:w-32 w-40 mx-auto" />
         </figure>
         <div class="p-3" id="modalBody">
             <h1 class="text-2xl text-blue-900 font-bold py-3">${phone.name}</h1> 
